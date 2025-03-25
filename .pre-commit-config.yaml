@@ -1,0 +1,8 @@
+# ci:
+#   autoupdate_schedule: monthly
+
+# repos:
+# - repo: https://github.com/hukkin/mdformat
+#   rev: 0.7.22 
+#   hooks:
+#   - id: mdformat

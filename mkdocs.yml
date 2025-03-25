@@ -1,0 +1,79 @@
+site_name: Python Package Development
+site_url: https://lkstrp.github.io/python-package-dev/
+repo_url: https://github.com/lkstrp/python-package-dev
+edit_uri: edit/main/docs/
+
+nav:
+  - Home: index.md
+  - Steps:
+    - 1. Write: steps/write.md
+    - 2. Build: steps/build.md
+    - 3. Test: steps/test.md
+    - 4. Format: steps/format.md
+    - 5. Type: steps/type.md
+    - 6. Document: steps/document.md
+    - 7. Release: steps/release.md
+    - 8. Publish: steps/publish.md
+    - 9. CI: steps/ci.md
+    - 10. Maintain: steps/maintain.md
+
+theme:
+  name: material
+  features:
+    - navigation.indexes 
+    - navigation.instant
+    - navigation.instant.preview
+    - navigation.instant.progress
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      primary: teal
+      scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      primary: teal
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+
+markdown_extensions:
+  # Callouts
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  # Abbreviations
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+  - abbr
+  - attr_list
+  # Emojis
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  # Toctree with permalinks
+  - toc:
+      title: On this page
+      permalink: true
+  # Grids
+  - md_in_html
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+
+
+extra:
+  social:
+    - icon: fontawesome/brands/github 
+      link: https://github.com/lkstrp
+  generator: false
