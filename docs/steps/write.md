@@ -21,7 +21,6 @@ If you think you know git, you might want to check out some **advanced git** tip
 Most of the tools discussed in the following sections can be used via CLI, but also provide IDE plugins. Popular IDEs are [VSCode](https://code.visualstudio.com/):material-link: and [PyCharm](https://www.jetbrains.com/pycharm/):material-link:. Both support plugins for linters, formatters, type checkers etc. That is quite useful since you get immediate feedback whith inline errors and warnings.
 
 ## Coding Assistant
-Most of the tools discussed in the following sections can be used via the CLI, but also provide IDE plugins. Popular IDEs are [VSCode](https://code.visualstudio.com/):material-link: and [PyCharm](https://www.jetbrains.com/pycharm/):material-link:. Both support plugins for linters, formatters, type checkers, etc. This is quite useful as you get immediate feedback with inline errors and warnings.
 
 ### Privacy compliant ways
 Of course, LLMs are a great help, but you may have privacy concerns or simply not be allowed to use them. Using models from OpenAI or Anthropic will send your code to their servers.
