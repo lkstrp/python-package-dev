@@ -66,6 +66,21 @@ Integration testing tests the interaction between different units of code. This 
 
     In the context of modelling, creating an integration test could be as simple as testing your model framework by running a test configuration of your model.
 
+### Static code anaylsis
+Static code analysis tools check code for known "smells" and problems using a database of previously identified problematic code patterns. Tools often provide a suggestion on how to improve the code. Compared to unit tests, static code analysis can be a bit slower, but can also provide insights to the coders and help them improve. There are several static code analysis frameworks available, e.g. [prospector](https://prospector.landscape.io/)
+
+To run a static code analysis install prospector
+```bash
+pip install prospector
+```
+
+and then run it from the project's base folder
+```bash
+prospector
+```
+
+Static code analysis are also easily included in pre-commit and continuous integration setups.
+
 ### Other tests
 There are many other types of tests, but you will probably be good at unit and integration testing. 
 
