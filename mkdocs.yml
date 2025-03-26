@@ -28,6 +28,7 @@ theme:
     - navigation.path
     - navigation.top
     - navigation.footer
+    - content.action.edit
     - toc.follow
 
   palette:
