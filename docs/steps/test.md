@@ -79,7 +79,24 @@ and then run it from the project's base folder
 prospector
 ```
 
-Static code analysis are also easily included in pre-commit and continuous integration setups.
+Static code analysis are also easily included in pre-commit setups.
+
+To run prospector before pushing use
+```yaml
+repos:
+  - repo: local
+    hooks:
+      - id: prospector
+        name: prospector
+        entry: prospector
+        stages: [ push ]
+        language: python
+        python: "3.9"
+        pass_filenames: false
+        always_run: true
+        additional_dependencies:
+          - prospector
+```
 
 ### Other tests
 There are many other types of tests, but you will probably be good at unit and integration testing. 
